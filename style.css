@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+
+:root{
+    --azulPastel: #0081a7;
+    --azul: #00afb9;
+    --pele:#fed9b7;
+    --creme: #fdfcdc;
+    --azulEscuro: #001524;
+    --vermelhoPastel: #f07167;
+
+}
+html{
+
+    background-color: var(--azulEscuro);
+    height: 100vh;
+    background-image: linear-gradient(#2a9d8f,#e9c46a,#f4a261);
+}
+
+
+
+
+main{
+    margin: auto;
+    margin-top: 5%;
+    border:solid 1px grey;
+    padding: 10px;
+    width: 100vw;
+    max-width: 400px;
+    height: 580px;
+    text-align: center;
+    background-color: var(--creme);
+    border-radius: 4px;
+}
+
+#titulo{
+    background-color:var(--azulPastel);
+    font-size: 36px;
+    padding: 30px 0;
+    border-radius: 4px;
+    color: #FFF;
+
+   
+    
+    
+}
+
+#menu{
+    margin: 10px 0;
+}
+
+#menu form{
+
+    
+    
+    display: flex;
+
+}
+
+#menu input[type = "button"]{
+    flex: 1;
+    padding: 15px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    background-color: var(--azul);
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+#escolhas{
+    border:solid 1px var(--vermelhoPastel);
+    display: flex;
+    align-items: center;
+    height: 200px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+#jogadorContainer{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    height: 100%;
+}
+
+#jogadorContainer p,#computadorContainer p{
+    margin-top: 40px;
+    font-size: 56px;
+}
+
+#vs{
+    
+    flex: 0.5;
+    height: 36px;
+    
+
+    
+}
+
+button{
+    margin: 10px 5px;
+    padding: 10px 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--vermelhoPastel);
+    border-radius: 4px;
+    border:solid 1px var(--azul);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#computadorContainer{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+}
+
+#resultado{
+    
+    font-size: 45px;
+    
+}
+
+#resultados{
+    
+     background-color: var(--azulPastel);
+    margin-top: 10px;
+    padding: 5% 5px 10px 5px;
+    border-radius: 4px;
+    height: 27%;
+    color: var(--creme);
+    border: solid 5px var(--vermelhoPastel);
+}
+
+@media (max-width:500px) {
+    main{
+    
+        margin: auto;
+        max-width: 100vw;
+        height: 100vh;
+        padding-top: 10%;
+    
+    
+
+}
+}
