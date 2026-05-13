@@ -4,44 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/google/noto-emoji-people-bodyparts/128/11959-victory-hand-icon.png">
 
     <script src="script.js" defer></script>
     <title>JOKENPÔ</title>
 </head>
 <body>
-    <main>
-        <h1 id="titulo">JOKENPÔ</h1>
+    <main >
+        <h1 id="titulo">JOKENPO</h1>
+        
+        <div id="jogar">
+            <div id="emoji">😉</div>
+            <button class="play">PLAY</button>
+            <div id="banner-inferior"> <h1>👊🖐✌</h1></div>
+        </div>
         
         
-        
-        
-        <section id="escolhas">
-            <div id="jogadorContainer">
-                <h2>Jogador</h2>
-                <P id="jogador"></P>
-            </div>
-            <div id="vs"><h1>VS</h1></div>
-            <div id="computadorContainer">
-                <h2>Computador</h2>
-                <p id="computador"></p>
-            </div>
-        </section>
-        
-        <div id="resultados"><h1 id="resultado">🤔</h1></div>
-        
-            <section id="menu">
-                <form>
-                    <input type="button" value="🧱" id="pedra">
-                    <input type="button" value="📄" id="papel">
-                    <input type="button" value="✂" id="tesoura">
-                    
-                </form>
-                <button id="sorteio">começar</button>
+        <div id="container" class="esconder">
+            <section id="escolhas">
+                <div id="jogadorContainer">
+                    <h2>Jogador</h2>
+                    <P id="jogador"></P>
+                </div>
+                <div id="vs"><h1>VS</h1></div>
+                <div id="computadorContainer">
+                    <h2>Computador</h2>
+                    <p id="computador"></p>
+                </div>
             </section>
+            
+            <div id="resultados"><h1 id="resultado">🤔 <br>...</h1></div>
+                <section id="menu">
+                    <form>
+                        <input type="button" value="🧱" id="pedra">
+                        <input type="button" value="📄" id="papel">
+                        <input type="button" value="✂" id="tesoura">
+            
+                    </form>
+                    <button id="sorteio">começar</button>
+                </section>
+        </div>
     </main>
 
 </body>

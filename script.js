@@ -3,6 +3,9 @@ const pedra = document.querySelector("#pedra");
 const papel = document.querySelector("#papel");
 const tesoura = document.querySelector("#tesoura");
 const sorteio = document.querySelector("#sorteio");
+const play = document.querySelector(".play");
+const container = document.querySelector("#container");
+const jogar = document.querySelector("#jogar");
 
 const jogardorParagrafo = document.querySelector("#jogador");
 const computadorParagrafo = document.querySelector("#computador");
@@ -12,7 +15,10 @@ const resultadoTitulo = document.querySelector("#resultado");
 let jogadormao
 
 
-
+play.addEventListener("click",()=>{
+    container.classList.toggle("esconder");
+    jogar.classList.toggle("esconder");
+});
 
 
 sorteio.addEventListener("click", (e) => {
