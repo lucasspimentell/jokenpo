@@ -37,6 +37,8 @@ novamente.addEventListener("click", () => {
     jogadorPontos.innerHTML = plcarJogador;
     resultadoFinal.classList.toggle("esconder");
 
+     resultadoTitulo.innerHTML = "🤔 <br>..."
+
 
     
 
