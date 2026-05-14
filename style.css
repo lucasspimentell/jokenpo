@@ -245,7 +245,7 @@ button {
 @media (max-width:500px) {
     body{
         height: 100dvh;
-        overflow-y: hidden;
+        
     }
     main {
 
