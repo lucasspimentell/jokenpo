@@ -29,8 +29,8 @@ play.addEventListener("click", () => {
 });
 
 novamente.addEventListener("click", () => {
-    jogar.classList.toggle("esconder");
-
+    placar.classList.toggle("esconder");
+    container.classList.toggle("esconder");
     plcarJogador = plcarJogador - plcarJogador;
     placarComputador = placarComputador - placarComputador;
     computadorPontos.innerHTML = placarComputador;
