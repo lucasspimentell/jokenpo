@@ -1,40 +1,41 @@
-*{
+* {
     padding: 0;
     margin: 0;
     outline: 0;
     box-sizing: border-box;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-:root{
+:root {
     --azulPastel: #0081a7;
     --azul: #00afb9;
-    --pele:#fed9b7;
+    --pele: #fed9b7;
     --creme: #fdfcdc;
     --azulEscuro: #001524;
     --vermelhoPastel: #f07167;
 
 }
-html{
+
+html {
 
     background-color: var(--azulEscuro);
     height: 100vh;
-    background-image: linear-gradient(#0b3833,#051f5e,#030433);
+    background-image: linear-gradient(#0b3833, #051f5e, #030433);
 }
 
-.esconder{
-    display: none!important;
-   
+.esconder {
+    display: none !important;
+
 }
 
-#emoji{
+#emoji {
     font-size: 80px;
     margin-top: 40px;
     margin-bottom: 40px;
-    
+
 }
 
-#banner-inferior{
+#banner-inferior {
     width: 100%;
     height: 200px;
     display: flex;
@@ -48,18 +49,18 @@ html{
     margin-top: 50px;
     background-color: #0081a7;
     border: solid 5px var(--vermelhoPastel);
-    
+
 }
 
-#banner-inferior h1{
-    
-    
-    
+#banner-inferior h1 {
+
+
+
     width: 300px;
     font-size: 66px;
 }
 
-.play{
+.play {
     width: 50%;
     height: 80px;
     font-family: "Press Start 2P", system-ui;
@@ -67,10 +68,10 @@ html{
 
 
 
-main{
+main {
     margin: auto;
     margin-top: 2%;
-    border:solid 1px grey;
+    border: solid 1px grey;
     padding: 10px;
     width: 100vw;
     max-width: 450px;
@@ -81,29 +82,29 @@ main{
     box-shadow: black 0px 0px 7px;
 }
 
-#titulo{
+#titulo {
     font-family: "Press Start 2P", system-ui;
-    
-    background-color:var(--azulPastel);
+
+    background-color: var(--azulPastel);
     font-size: 40px;
-    text-shadow: #001524 2px 2px 0px ;
+    text-shadow: #001524 2px 2px 0px;
     padding: 30px 0;
     border-radius: 4px;
     color: #FFF;
     margin-bottom: 5px;
     border: solid 3px var(--azulEscuro);
-    
-    
-   
-    
-    
+
+
+
+
+
 }
 
-#placar{
+#placar {
     font-family: "Press Start 2P", system-ui;
-    background-color:var(--azulPastel);
+    background-color: var(--azulPastel);
     font-size: 40px;
-    text-shadow: #001524 2px 2px 0px ;
+    text-shadow: #001524 2px 2px 0px;
     padding: 0px 0;
     border-radius: 4px;
     color: #FFF;
@@ -116,22 +117,22 @@ main{
 
 
 
-#menu{
+#menu {
     margin: 10px 0;
 }
 
-#menu form{
+#menu form {
 
-    
-    
+
+
     display: flex;
 
 }
 
-#menu input[type = "button"]{
+#menu input[type="button"] {
     flex: 1;
     padding: 15px;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     background-color: var(--azul);
     text-transform: uppercase;
@@ -140,8 +141,8 @@ main{
     cursor: pointer;
 }
 
-#escolhas{
-    border:solid 1px var(--vermelhoPastel);
+#escolhas {
+    border: solid 1px var(--vermelhoPastel);
     display: flex;
     align-items: center;
     height: 200px;
@@ -150,8 +151,8 @@ main{
     background-color: #fff;
 }
 
-#jogadorContainer{
-    
+#jogadorContainer {
+
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -160,21 +161,22 @@ main{
     height: 100%;
 }
 
-#jogadorContainer p,#computadorContainer p{
+#jogadorContainer p,
+#computadorContainer p {
     margin-top: 40px;
     font-size: 56px;
 }
 
-#vs{
-    
+#vs {
+
     flex: 0.5;
     height: 36px;
-    
 
-    
+
+
 }
 
-button{
+button {
     width: 100%;
     height: 60px;
     margin-top: 5px;
@@ -190,8 +192,8 @@ button{
 
 }
 
-#computadorContainer{
-    
+#computadorContainer {
+
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -200,15 +202,15 @@ button{
     height: 100%;
 }
 
-#resultado{
-    
+#resultado {
+
     font-size: 45px;
-    
+
 }
 
-#resultados{
-    
-     background-color: var(--azulPastel);
+#resultados {
+
+    background-color: var(--azulPastel);
     margin-top: 10px;
     padding: 5% 5px 10px 5px;
     border-radius: 4px;
@@ -217,7 +219,7 @@ button{
     border: solid 5px var(--vermelhoPastel);
 }
 
-#resultadoFinal{
+#resultadoFinal {
     background-color: var(--azulPastel);
     margin-top: 10px;
     padding: 5% 5px 10px 5px;
@@ -228,30 +230,34 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
-#resultadoPartida{
+#resultadoPartida {
     font-size: 35px;
 }
 
-#resultadoFinal button{
-    font-family:"Press Start 2P", system-ui;
+#resultadoFinal button {
+    font-family: "Press Start 2P", system-ui;
     margin-top: 50px;
 }
 
 @media (max-width:500px) {
-    main{
-    
+    body{
+        height: 100vh;
+    }
+    main {
+
         margin: auto;
         max-width: 100vw;
-        height: 100dvh;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-}
+
+    }
+
     /* #placar{
         flex: 0.1;
     }
